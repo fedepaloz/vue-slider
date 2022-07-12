@@ -1,6 +1,7 @@
 const root = new Vue ({
     el : '#root' ,
     data : {
+        currentIndex: 0,
         pictures : [
             {
                 url: 'http://www.viaggiareonline.it/wp-content/uploads/2014/11/sweden_148857365.jpg',
@@ -26,7 +27,7 @@ const root = new Vue ({
                 url: 'https://static1.evcdn.net/images/reduction/1583177_w-1920_h-1080_q-70_m-crop.jpg',
                 title: 'Argentina',
                 description:
-                    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam.',
+                    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam. ',
             },
             {
                 url: 'https://cdn.sanity.io/images/24oxpx4s/prod/ed09eff0362396772ad50ec3bfb728d332eb1c30-3200x2125.jpg?w=1600&h=1063&fit=crop',
@@ -35,9 +36,10 @@ const root = new Vue ({
                     'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam.',
             },
         ]
+      
     },
     methods : {
-        
+
     },
 })
 

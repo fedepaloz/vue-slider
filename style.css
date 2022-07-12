@@ -18,10 +18,10 @@ img {
     height: 100%;
     object-fit: contain;
     border-radius: 20px;
-    display: none;
+   
 }
 
-#carousel .slide-cards .active {
+.active {
     display: block;
 }
 
@@ -48,3 +48,21 @@ img {
 #right-arrow:hover{transform: scale(1.2); color: red;}
 #left-arrow:hover{transform: scale(1.2);color: red;}
 
+#thumbnails{width: 150px;
+height: 150px;
+object-fit: contain;
+display: flex;
+
+
+}
+
+figcaption{position: absolute;
+color: white;}
+
+#thumbnails img {filter: grayscale(1);}
+
+#thumbnails img.active {filter: grayscale(0);}
+
+.show{display: block;}
+
+.slide-cards img {display: none;}
