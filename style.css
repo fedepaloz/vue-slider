@@ -1,0 +1,50 @@
+#carousel {
+    height: 500px;
+    width: 700px;
+    margin: 50px auto;
+    border: 1px dotted black;
+    position: relative;
+}
+
+.slide-cards {
+    height: 100%;
+    width: 100%;
+}
+
+/* le immagini hanno display none ma in quella con classe active c'è block quindi appare, questo dovra essere gestito successivmente da js */
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+    display: none;
+}
+
+#carousel .slide-cards .active {
+    display: block;
+}
+
+/* stile delle frecce che fanno muovere il carosello */
+
+#left-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 105%;
+    cursor:pointer;
+    
+}
+
+#right-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 105%;
+    cursor: pointer;
+
+}
+
+#right-arrow:hover{transform: scale(1.2); color: red;}
+#left-arrow:hover{transform: scale(1.2);color: red;}
+
